@@ -18,7 +18,6 @@ function! translator#action#window(translations) abort
     if empty(t.paraphrase) && empty(t.explains)
       continue
     endif
-    call add(content, '')
     call add(content, printf('─── %s ───', t.engine))
     if !empty(t.phonetic)
       let phonetic = marker . printf('[%s]', t.phonetic)
